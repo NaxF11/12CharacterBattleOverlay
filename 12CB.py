@@ -2,7 +2,7 @@ import pygame, sys, time, remix_char
 
 from pygame.locals import *
 
-#test message
+
 
 
 def opcion_1():
@@ -330,10 +330,7 @@ def opcion_1():
     stock_link_2_CK_2 = True
     stock_link_3_CK_2 = True
     stock_link_4_CK_2 = True
-    stock_link_55_CK_2 = True
-    stock_link_66_CK_2 = True
-    stock_link_77_CK_2 = True
-    stock_link_88_CK_2 = True
+    
     life_pastCK1 = True
     contador_link_2 = 4
     link1 = pygame.image.load("images/link.jpg")
