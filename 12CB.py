@@ -3,6 +3,7 @@ import pygame, sys, time, remix_char
 from pygame.locals import *
 
 
+
 def opcion_1():
     pygame.font.init()
     myfont = pygame.font.SysFont("Comic Sans MS", 10)
