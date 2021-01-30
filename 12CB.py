@@ -3,10 +3,7 @@ import pygame, sys, time, remix_char
 from pygame.locals import *
 
 
-
-
 def opcion_1():
-    
     pygame.font.init()
     myfont = pygame.font.SysFont("Comic Sans MS", 10)
     myfont_stocks = pygame.font.SysFont("Comic Sans MS", 27)
@@ -18,16 +15,11 @@ def opcion_1():
     texto_3 = myfont_stocks.render(texto3,False,(255,255,255))
     texto_4 = myfont_stocks.render(texto3,False,(255,255,255))
     
-
     # Texto
     textoCK = False
     texto2CK = False
     
-    
-    
-    
     # Creación de la ventana
-
     pygame.init()
     ventana = pygame.display.set_mode((800,645))
     pygame.display.set_caption("12 Character Battle Chart  V 2.0")
@@ -83,20 +75,8 @@ def opcion_1():
     # Link
     stock_link_1 = pygame.image.load("images/heartrojo.png")
     stock_link_1 = pygame.transform.scale(stock_link_1, (30,30))
-    stock_link_2 = pygame.image.load("images/heartrojo.png")
-    stock_link_2 = pygame.transform.scale(stock_link_2, (30,30))
-    stock_link_3 = pygame.image.load("images/heartrojo.png")
-    stock_link_3 = pygame.transform.scale(stock_link_3, (30,30))
-    stock_link_4 = pygame.image.load("images/heartrojo.png")
-    stock_link_4 = pygame.transform.scale(stock_link_4, (30,30))
     stock_link_55 = pygame.image.load("images/heartnegro.png")
     stock_link_55 = pygame.transform.scale(stock_link_55, (30,30))
-    stock_link_66 = pygame.image.load("images/heartnegro.png")
-    stock_link_66 = pygame.transform.scale(stock_link_66, (30,30))
-    stock_link_77 = pygame.image.load("images/heartnegro.png")
-    stock_link_77 = pygame.transform.scale(stock_link_77, (30,30))
-    stock_link_88 = pygame.image.load("images/heartnegro.png")
-    stock_link_88 = pygame.transform.scale(stock_link_88, (30,30))
     life_past = pygame.image.load("images/lifepast.png")
     life_past = pygame.transform.scale(life_past, (60,60))
     stock_link_1_CK = True
@@ -243,7 +223,6 @@ def opcion_1():
     pikachud = pygame.transform.scale(pikachud, (100,100))
     pikachuCK = True
 
-
     # Jigglypuff
     stock_jigglypuff_1 = pygame.image.load("images/pokeball.jpg")
     stock_jigglypuff_1 = pygame.transform.scale(stock_jigglypuff_1, (19,19))
@@ -270,10 +249,6 @@ def opcion_1():
     stock_luigi_3_CK_2 = True
     stock_luigi_4_CK_2 = True
     contador_luigi_2 = 4
-    luigi1 = pygame.image.load("images/luigi.jpg")
-    luigi1 = pygame.transform.scale(luigi1, (100, 100))
-    luigid1 = pygame.image.load("images/luigid.jpg")
-    luigid1 = pygame.transform.scale(luigid1, (100,100))
     luigiCK1 = True
 
     # Mario
@@ -282,97 +257,36 @@ def opcion_1():
     stock_mario_3_CK_2 = True
     stock_mario_4_CK_2 = True
     contador_mario_2 = 4
-    
     marioCK = True
-    
     marioCK1 = True
 
     # DK
-    stock_dk_1_2 = pygame.image.load("images/banana.jpg")
-    stock_dk_1_2 = pygame.transform.scale(stock_dk_1, (22,22))
-    stock_dk_2_2 = pygame.image.load("images/banana.jpg")
-    stock_dk_2_2 = pygame.transform.scale(stock_dk_2_2, (22,22))
-    stock_dk_3_2 = pygame.image.load("images/banana.jpg")
-    stock_dk_3_2 = pygame.transform.scale(stock_dk_3_2, (22,22))
-    stock_dk_4_2 = pygame.image.load("images/banana.jpg")
-    stock_dk_4_2 = pygame.transform.scale(stock_dk_4_2, (22,22))
     stock_dk_1_CK_2 = True
     stock_dk_2_CK_2 = True
     stock_dk_3_CK_2 = True
     stock_dk_4_CK_2 = True
     contador_dk_2 = 4
-    dk1 = pygame.image.load("images/dk.jpg")
-    dk1 = pygame.transform.scale(dk1, (100,100))
-    dkd1 = pygame.image.load("images/dkd.jpg")
-    dkd1 = pygame.transform.scale(dkd1, (100,100))
     dkCK1 = True
 
     # Link
-    stock_link_1_2 = pygame.image.load("images/heartrojo.png")
-    stock_link_1_2 = pygame.transform.scale(stock_link_1, (30,30))
-    stock_link_2_2 = pygame.image.load("images/heartrojo.png")
-    stock_link_2_2 = pygame.transform.scale(stock_link_2, (30,30))
-    stock_link_3_2 = pygame.image.load("images/heartrojo.png")
-    stock_link_3_2 = pygame.transform.scale(stock_link_3, (30,30))
-    stock_link_4_2 = pygame.image.load("images/heartrojo.png")
-    stock_link_4_2 = pygame.transform.scale(stock_link_4, (30,30))
-    stock_link_55_2 = pygame.image.load("images/heartnegro.png")
-    stock_link_55_2 = pygame.transform.scale(stock_link_55, (30,30))
-    stock_link_66_2 = pygame.image.load("images/heartnegro.png")
-    stock_link_66_2 = pygame.transform.scale(stock_link_66, (30,30))
-    stock_link_77_2 = pygame.image.load("images/heartnegro.png")
-    stock_link_77_2 = pygame.transform.scale(stock_link_77, (30,30))
-    stock_link_88_2 = pygame.image.load("images/heartnegro.png")
-    stock_link_88_2 = pygame.transform.scale(stock_link_88, (30,30))
-    life_past_2 = pygame.image.load("images/lifepast.png")
-    life_past_2 = pygame.transform.scale(life_past, (60,60))
     stock_link_1_CK_2 = True
     stock_link_2_CK_2 = True
     stock_link_3_CK_2 = True
     stock_link_4_CK_2 = True
-    
     life_pastCK1 = True
     contador_link_2 = 4
-    link1 = pygame.image.load("images/link.jpg")
-    link1 = pygame.transform.scale(link1, (100,100))
-    linkd1 = pygame.image.load("images/linkd.jpg")
-    linkd1 = pygame.transform.scale(linkd1, (100,100))
     linkCK1 = True
 
-
     # Samus
-    energy2 = pygame.image.load("images/energy0.png")
-    energy2 = pygame.transform.scale(energy, (40,10))
-    
-
     stock_samus_1_CK_2 = True
     stock_samus_2_CK_2 = True
     stock_samus_3_CK_2 = True
     stock_samus_4_CK_2 = True
-    
     contador_samus_2 = 4
-    samus1 = pygame.image.load("images/samus.jpg")
-    samus1 = pygame.transform.scale(samus1, (100,100))
-    samusd1 = pygame.image.load("images/samusd.jpg")
-    samusd1 = pygame.transform.scale(samusd1, (100,100))
     samusCK1 = True
     energy2CK = True
 
     # C. Falcon
-    stock_falcon_0_2 = pygame.image.load("images/fz_energy1.png")
-    stock_falcon_0_2 = pygame.transform.scale(stock_falcon_0, (90,25))
-    stock_falcon_1_2 = pygame.image.load("images/fz_energy2.png")
-    stock_falcon_1_2 = pygame.transform.scale(stock_falcon_1, (85,20))
-    stock_falcon_2_2 = pygame.image.load("images/fz_energy2.png")
-    stock_falcon_2_2 = pygame.transform.scale(stock_falcon_1, (85,20))
-    stock_falcon_3_2 = pygame.image.load("images/fz_energy2.png")
-    stock_falcon_3_2 = pygame.transform.scale(stock_falcon_1, (85,20))
-    stock_falcon_4_2 = pygame.image.load("images/fz_energy2.png")
-    stock_falcon_4_2 = pygame.transform.scale(stock_falcon_1, (85,20))
-    bar1_2 = pygame.image.load("images/bar1.png")
-    bar1_2 = pygame.transform.scale(bar1, (56,2))
-    bar2_2 = pygame.image.load("images/bar2.png")
-    bar2_2 = pygame.transform.scale(bar2, (2,16))
     bar22CK_2 = True
     bar22CK_2_2 = True
     bar1CK_2 = True
@@ -383,29 +297,9 @@ def opcion_1():
     stock_falcon_3_CK_2 = True
     stock_falcon_4_CK_2 = True
     contador_falcon_2 = 4
-    falcon1 = pygame.image.load("images/falcon2.jpg")
-    falcon1 = pygame.transform.scale(falcon1, (100,100))
-    falcond1 = pygame.image.load("images/falcond.jpg")
-    falcond1 = pygame.transform.scale(falcond1, (100,100))
     falconCK1 = True
 
     # Ness
-    stock_ness_1_2 = pygame.image.load("images/hp.png")
-    stock_ness_1_2 = pygame.transform.scale(stock_ness_1, (19,17))
-    stock_ness_2_2 = pygame.image.load("images/cero.png")
-    stock_ness_2_2 = pygame.transform.scale(stock_ness_2, (17,17))
-    stock_ness_3_2 = pygame.image.load("images/cero.png")
-    stock_ness_3_2 = pygame.transform.scale(stock_ness_3, (17,17))
-    stock_ness_4_2 = pygame.image.load("images/cero.png")
-    stock_ness_4_2 = pygame.transform.scale(stock_ness_4, (17,17))
-    stock_ness_5_2 = pygame.image.load("images/uno.png")
-    stock_ness_5_2 = pygame.transform.scale(stock_ness_5, (17,17))
-    stock_ness_6_2 = pygame.image.load("images/dos.png")
-    stock_ness_6_2 = pygame.transform.scale(stock_ness_6, (17,17))
-    stock_ness_7_2 = pygame.image.load("images/tres.png")
-    stock_ness_7_2 = pygame.transform.scale(stock_ness_7, (17,17))
-    stock_ness_8_2 = pygame.image.load("images/cuatro.png")
-    stock_ness_8_2 = pygame.transform.scale(stock_ness_8, (17,17))
     stock_ness_1_CK_2 = True
     stock_ness_2_CK_2 = True
     stock_ness_3_CK_2 = True
@@ -415,89 +309,55 @@ def opcion_1():
     stock_ness_7_CK_2 = False
     stock_ness_8_CK_2 = True
     contador_ness_2 = 4
-    ness1 = pygame.image.load("images/ness.jpg")
-    ness1 = pygame.transform.scale(ness1, (100,100))
-    nessd1 = pygame.image.load("images/nessd.jpg")
-    nessd1 = pygame.transform.scale(nessd1, (100,100))
     nessCK1 = True
 
     # Yoshi
-    stock_yoshi_1_2 = pygame.image.load("images/egg.jpg")
-    stock_yoshi_1_2 = pygame.transform.scale(stock_yoshi_1, (18,18))
-    stock_yoshi_2_2 = pygame.image.load("images/egg.jpg")
-
     stock_yoshi_1_CK_2 = True
     stock_yoshi_2_CK_2 = True
     stock_yoshi_3_CK_2 = True
     stock_yoshi_4_CK_2 = True
     contador_yoshi_2 = 4
-    yoshi1 = pygame.image.load("images/yoshi.jpg")
-    yoshi1 = pygame.transform.scale(yoshi1, (100,100))
-    yoshid1 = pygame.image.load("images/yoshid.jpg")
-    yoshid1 = pygame.transform.scale(yoshid1, (100,100))
     yoshiCK1 = True
 
     # Kirby
-    #stock_kirby_1_2 = pygame.image.load("images/tomato.png")
-    #stock_kirby_1_2 = pygame.transform.scale(stock_kirby_1, (30,30))
-
     stock_kirby_1_CK_2 = True
     stock_kirby_2_CK_2 = True
     stock_kirby_3_CK_2 = True
     stock_kirby_4_CK_2 = True
     contador_kirby_2 = 4
-    kirby1 = pygame.image.load("images/kirby.jpg")
-    kirby1 = pygame.transform.scale(kirby1, (100,100))
-    kirbyd1 = pygame.image.load("images/kirbyd.jpg")
-    kirbyd1 = pygame.transform.scale(kirbyd1, (100,100))
     kirbyCK1 = True
 
     # Fox
-    
     stock_fox_1_CK_2 = True
     stock_fox_2_CK_2 = True
     stock_fox_3_CK_2 = True
     stock_fox_4_CK_2 = True
     contador_fox_2 = 4
-    fox1 = pygame.image.load("images/fox.jpg")
-    fox1 = pygame.transform.scale(fox1, (100,100))
-    foxd1 = pygame.image.load("images/foxd.jpg")
-    foxd1 = pygame.transform.scale(foxd1, (100,100))
     foxCK1 = True
 
     # Pikachu
-    
     stock_pikachu_1_CK_2 = True
     stock_pikachu_2_CK_2 = True
     stock_pikachu_3_CK_2 = True
     stock_pikachu_4_CK_2 = True
     contador_pikachu_2 = 4
-    pikachu1 = pygame.image.load("images/pikachu.jpg")
-    pikachu1 = pygame.transform.scale(pikachu1, (100,100))
-    pikachud1 = pygame.image.load("images/pikachud.jpg")
-    pikachud1 = pygame.transform.scale(pikachud1, (100,100))
     pikachuCK1 = True
 
     # Jigglypuff
-    
     stock_jigglypuff_1_CK_2 = True
     stock_jigglypuff_2_CK_2 = True
     stock_jigglypuff_3_CK_2 = True
     stock_jigglypuff_4_CK_2 = True
     contador_jigglypuff_2 = 4
-    jigglypuff1 = pygame.image.load("images/jigglypuff.jpg")
-    jigglypuff1 = pygame.transform.scale(jigglypuff1, (100,100))
-    jigglypuffd1 = pygame.image.load("images/jigglypuffd.jpg")
-    jigglypuffd1 = pygame.transform.scale(jigglypuffd1, (100,100))
     jigglypuffCK1 = True
 
+    # Color del fondo
     negro = (0,0,0)
 
     # Mouse
     cursor = pygame.image.load("images/fan.png")
     cursor = pygame.transform.scale(cursor, (40,40))
     pygame.mouse.set_visible(False)
-    coord = pygame.mouse.get_pos()
 
     # Boton Reset
     reset = pygame.image.load("images/reset.png")
@@ -542,10 +402,9 @@ def opcion_1():
     start_b2 = pygame.transform.scale(start_b2, (80,40))
     start_bCK2 = False
     
-    clock = pygame.time.Clock()
+    
 
     # Smash Remix Creation
-    
     
     #----------------------------------------------------------------
     #------------Accion de mostrar y no la imagen---------------
@@ -553,7 +412,6 @@ def opcion_1():
 
     
     while True:
-
         # Menu
         if modoCK == True:
             ventana.blit(modo,(0,0))
@@ -713,24 +571,24 @@ def opcion_1():
                 
 
             if stock_link_2_CK == True:
-                ventana.blit(stock_link_2, (24,374))
+                ventana.blit(stock_link_1, (24,374))
             else:
-                ventana.blit(stock_link_2, (-40,-40))
-                ventana.blit(stock_link_66, (24,375))
+                ventana.blit(stock_link_1, (-40,-40))
+                ventana.blit(stock_link_55, (24,375))
                 
 
             if stock_link_3_CK == True:
-                ventana.blit(stock_link_3, (44,374))
+                ventana.blit(stock_link_1, (44,374))
             else:
-                ventana.blit(stock_link_3, (-40,-40))
-                ventana.blit(stock_link_77, (44,375))
+                ventana.blit(stock_link_1, (-40,-40))
+                ventana.blit(stock_link_55, (44,375))
                 
                 
             if stock_link_4_CK == True:
-                ventana.blit(stock_link_4, (64,374))
+                ventana.blit(stock_link_1, (64,374))
             else:
-                ventana.blit(stock_link_4, (-40,-40))
-                ventana.blit(stock_link_88, (64,375))
+                ventana.blit(stock_link_1, (-40,-40))
+                ventana.blit(stock_link_55, (64,375))
 
             if life_pastCK == True:
                 ventana.blit(life_past, (20, 350))
@@ -1066,72 +924,72 @@ def opcion_1():
             
             # DK
             if dkCK1 == True:
-                ventana.blit(dk1,(600,200))
+                ventana.blit(dk,(600,200))
             else:
-                ventana.blit(dkd1,(600,200))
+                ventana.blit(dkd,(600,200))
 
             if stock_dk_1_CK_2 == True:
-                ventana.blit(stock_dk_1_2, (608,275))
+                ventana.blit(stock_dk_1, (608,275))
             else:
-                ventana.blit(stock_dk_1_2, (-40,-40))
+                ventana.blit(stock_dk_1, (-40,-40))
 
             if stock_dk_2_CK_2 == True:
-                ventana.blit(stock_dk_2_2, (628,275))
+                ventana.blit(stock_dk_1, (628,275))
             else:
-                ventana.blit(stock_dk_2_2, (-40,-40))
+                ventana.blit(stock_dk_1, (-40,-40))
 
             if stock_dk_3_CK_2 == True:
-                ventana.blit(stock_dk_3_2, (648,275))
+                ventana.blit(stock_dk_1, (648,275))
             else:
-                ventana.blit(stock_dk_3_2, (-40,-40))
+                ventana.blit(stock_dk_1, (-40,-40))
                 
             if stock_dk_4_CK_2 == True:
-                ventana.blit(stock_dk_4_2, (668,275))
+                ventana.blit(stock_dk_1, (668,275))
             else:
-                ventana.blit(stock_dk_4_2, (-40,-40))
+                ventana.blit(stock_dk_1, (-40,-40))
 
                 
             # Link
             if linkCK1 == True:
-                ventana.blit(link1,(600,300))
+                ventana.blit(link,(600,300))
             else:
-                ventana.blit(linkd1,(600,300))
+                ventana.blit(linkd,(600,300))
 
             if stock_link_1_CK_2 == True:
-                ventana.blit(stock_link_1_2, (604,374))
+                ventana.blit(stock_link_1, (604,374))
             else:
-                ventana.blit(stock_link_1_2, (-40,-40))
-                ventana.blit(stock_link_55_2, (604,375))
+                ventana.blit(stock_link_1, (-40,-40))
+                ventana.blit(stock_link_55, (604,375))
 
             if stock_link_2_CK_2 == True:
-                ventana.blit(stock_link_2_2, (624,374))
+                ventana.blit(stock_link_1, (624,374))
             else:
-                ventana.blit(stock_link_2_2, (-40,-40))
-                ventana.blit(stock_link_66_2, (624,375))
+                ventana.blit(stock_link_1, (-40,-40))
+                ventana.blit(stock_link_55, (624,375))
 
             if stock_link_3_CK_2 == True:
-                ventana.blit(stock_link_3_2, (644,374))
+                ventana.blit(stock_link_1, (644,374))
             else:
-                ventana.blit(stock_link_3_2, (-40,-40))
-                ventana.blit(stock_link_77_2, (644,375))
+                ventana.blit(stock_link_1, (-40,-40))
+                ventana.blit(stock_link_55, (644,375))
                 
             if stock_link_4_CK_2 == True:
-                ventana.blit(stock_link_4_2, (664,374))
+                ventana.blit(stock_link_1, (664,374))
             else:
-                ventana.blit(stock_link_4_2, (-40,-40))
-                ventana.blit(stock_link_88_2, (664,375))
+                ventana.blit(stock_link_1, (-40,-40))
+                ventana.blit(stock_link_55, (664,375))
 
             if life_pastCK1 == True:
-                ventana.blit(life_past_2, (620, 350))
+                ventana.blit(life_past, (620, 350))
             else:
-                ventana.blit(life_past_2, (620, 350))
+                ventana.blit(life_past, (620, 350))
 
 
             # Samus
             if samusCK1 == True:
-                ventana.blit(samus1,(600,400))
+                ventana.blit(samus,(600,400))
             else:
-                ventana.blit(samusd1,(600,400))
+                ventana.blit(samusd,(600,400))
 
             if stock_samus_1_CK_2 == True:
                 ventana.blit(stock_samus_1, (614,480))
@@ -1158,114 +1016,114 @@ def opcion_1():
                 ventana.blit(stock_samus_5, (662,480))
 
             if energy2CK == True:
-                ventana.blit(energy2, (614,490))
+                ventana.blit(energy, (614,490))
             else:
-                ventana.blit(energy2, (614,490))
+                ventana.blit(energy, (614,490))
 
             
             # Falcon
             if falconCK1 == True:
-                ventana.blit(falcon1,(600,500))
+                ventana.blit(falcon,(600,500))
             else:
-                ventana.blit(falcond1,(600,500))
+                ventana.blit(falcond,(600,500))
 
             if stock_falcon_0_CK_2 == True:
-                ventana.blit(stock_falcon_0_2, (605,575))
+                ventana.blit(stock_falcon_0, (605,575))
             else:
-                ventana.blit(stock_falcon_0_2, (-40,-40))
+                ventana.blit(stock_falcon_0, (-40,-40))
             
             if stock_falcon_1_CK_2 == True:
-                ventana.blit(stock_falcon_1_2, (606,580))
+                ventana.blit(stock_falcon_1, (606,580))
             else:
-                ventana.blit(stock_falcon_1_2, (-40,-40))
+                ventana.blit(stock_falcon_1, (-40,-40))
 
             if stock_falcon_2_CK_2 == True:
-                ventana.blit(stock_falcon_2_2, (620,580))
+                ventana.blit(stock_falcon_1, (620,580))
             else:
-                ventana.blit(stock_falcon_2_2, (-40,-40))
+                ventana.blit(stock_falcon_1, (-40,-40))
 
             if stock_falcon_3_CK_2 == True:
-                ventana.blit(stock_falcon_3_2, (634,580))
+                ventana.blit(stock_falcon_1, (634,580))
             else:
-                ventana.blit(stock_falcon_3_2, (-40,-40))
+                ventana.blit(stock_falcon_1, (-40,-40))
                 
             if stock_falcon_4_CK_2 == True:
-                ventana.blit(stock_falcon_4_2, (648,580))
+                ventana.blit(stock_falcon_1, (648,580))
             else:
-                ventana.blit(stock_falcon_4_2, (-40,-40))
+                ventana.blit(stock_falcon_1, (-40,-40))
 
             if bar1CK_2 == True:
-                ventana.blit(bar1_2, (635,581))
+                ventana.blit(bar1, (635,581))
             else:
-                ventana.blit(bar1_2, (635,581))
+                ventana.blit(bar1, (635,581))
 
             if bar2CK_2 == True:
-                ventana.blit(bar1_2, (635,597))
+                ventana.blit(bar1, (635,597))
             else:
-                ventana.blit(bar1_2, (635,597))
+                ventana.blit(bar1, (635,597))
 
             if bar22CK_2 == True:
-                ventana.blit(bar2_2, (635,583))
+                ventana.blit(bar2, (635,583))
             else:
-                ventana.blit(bar2_2, (635,583))
+                ventana.blit(bar2, (635,583))
 
             if bar22CK_2_2 == True:
-                ventana.blit(bar2_2, (689,582))
+                ventana.blit(bar2, (689,582))
             
 
 
             # Ness
             if nessCK1 == True:
-                ventana.blit(ness1,(700,0))
+                ventana.blit(ness,(700,0))
             else:
-                ventana.blit(nessd1,(700,0))
+                ventana.blit(nessd,(700,0))
 
             if stock_ness_1_CK_2 == True:
-                ventana.blit(stock_ness_1_2, (710,80))
+                ventana.blit(stock_ness_1, (710,80))
             else:
-                ventana.blit(stock_ness_1_2, (710,80))
+                ventana.blit(stock_ness_1, (710,80))
 
             if stock_ness_2_CK_2 == True:
-                ventana.blit(stock_ness_2_2, (733,80))
+                ventana.blit(stock_ness_2, (733,80))
             else:
-                ventana.blit(stock_ness_2_2, (733,80))
+                ventana.blit(stock_ness_2, (733,80))
 
             if stock_ness_3_CK_2 == True:
-                ventana.blit(stock_ness_3_2, (750,80))
+                ventana.blit(stock_ness_3, (750,80))
             else:
-                ventana.blit(stock_ness_3_2, (750,80))
+                ventana.blit(stock_ness_3, (750,80))
                 
             if stock_ness_4_CK_2 == True:
-                ventana.blit(stock_ness_4_2, (767,80))
+                ventana.blit(stock_ness_4, (767,80))
             else:
-                ventana.blit(stock_ness_4_2, (767,80))
+                ventana.blit(stock_ness_4, (767,80))
 
             if stock_ness_5_CK_2 == True:
-                ventana.blit(stock_ness_5_2, (767,80))
+                ventana.blit(stock_ness_5, (767,80))
             else:
-                ventana.blit(stock_ness_5_2, (-40,-40))
+                ventana.blit(stock_ness_5, (-40,-40))
 
             if stock_ness_6_CK_2 == True:
-                ventana.blit(stock_ness_6_2, (767,80))
+                ventana.blit(stock_ness_6, (767,80))
             else:
-                ventana.blit(stock_ness_6_2, (-40,-40))
+                ventana.blit(stock_ness_6, (-40,-40))
 
             if stock_ness_7_CK_2 == True:
-                ventana.blit(stock_ness_7_2, (767,80))
+                ventana.blit(stock_ness_7, (767,80))
             else:
-                ventana.blit(stock_ness_7_2, (-40,-40))
+                ventana.blit(stock_ness_7, (-40,-40))
                 
             if stock_ness_8_CK_2 == True:
-                ventana.blit(stock_ness_8_2, (767,80))
+                ventana.blit(stock_ness_8, (767,80))
             else:
-                ventana.blit(stock_ness_8_2, (-40,-40))
+                ventana.blit(stock_ness_8, (-40,-40))
 
 
             # Yoshi
             if yoshiCK1 == True:
-                ventana.blit(yoshi1,(700,100))
+                ventana.blit(yoshi,(700,100))
             else:
-                ventana.blit(yoshid1,(700,100))
+                ventana.blit(yoshid,(700,100))
 
             if stock_yoshi_1_CK_2 == True:
                 ventana.blit(stock_yoshi_1, (710,180))
@@ -1290,9 +1148,9 @@ def opcion_1():
             
             # Kirby
             if kirbyCK1 == True:
-                ventana.blit(kirby1,(700,200))
+                ventana.blit(kirby,(700,200))
             else:
-                ventana.blit(kirbyd1,(700,200))
+                ventana.blit(kirbyd,(700,200))
 
             if stock_kirby_1_CK_2 == True:
                 ventana.blit(stock_kirby_1, (705,270))
@@ -1317,9 +1175,9 @@ def opcion_1():
             
             # Fox
             if foxCK1 == True:
-                ventana.blit(fox1,(700,300))
+                ventana.blit(fox,(700,300))
             else:
-                ventana.blit(foxd1,(700,300))
+                ventana.blit(foxd,(700,300))
 
             if stock_fox_1_CK_2 == True:
                 ventana.blit(stock_fox_1, (710,378))
@@ -1344,9 +1202,9 @@ def opcion_1():
             
             # Pikachu
             if pikachuCK1 == True:
-                ventana.blit(pikachu1,(700,400))
+                ventana.blit(pikachu,(700,400))
             else:
-                ventana.blit(pikachud1,(700,400))
+                ventana.blit(pikachud,(700,400))
 
             if stock_pikachu_1_CK_2 == True:
                 ventana.blit(stock_pikachu_1, (710,480))
@@ -1371,9 +1229,9 @@ def opcion_1():
             
             # Jigglypuff
             if jigglypuffCK1 == True:
-                ventana.blit(jigglypuff1,(700,500))
+                ventana.blit(jigglypuff,(700,500))
             else:
-                ventana.blit(jigglypuffd1,(700,500))
+                ventana.blit(jigglypuffd,(700,500))
 
             if stock_jigglypuff_1_CK_2 == True:
                 ventana.blit(stock_jigglypuff_1, (710,580))
