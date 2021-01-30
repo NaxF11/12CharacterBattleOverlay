@@ -2,7 +2,7 @@ import pygame, sys, time, remix_char
 
 from pygame.locals import *
 
-
+#test message
 
 
 def opcion_1():
