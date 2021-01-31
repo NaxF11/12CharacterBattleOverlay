@@ -10,7 +10,7 @@ def opcion_1():
     myfont_stocks = pygame.font.SysFont("Comic Sans MS", 27)
     cont_texto = 48
     cont_texto2 = 48
-    texto2 = "Designed by Nax & Bob"
+    texto2 = "Designed  by  Nax & Bob"
     texto3 = "48"
     texto_2 = myfont.render(texto2,False,(255,255,255))
     texto_3 = myfont_stocks.render(texto3,False,(255,255,255))
@@ -23,7 +23,7 @@ def opcion_1():
     # Creación de la ventana
     pygame.init()
     ventana = pygame.display.set_mode((800,645))
-    pygame.display.set_caption("12 Character Battle Chart  V 2.0")
+    pygame.display.set_caption("12 Character Battle Chart")
     pygame.display.set_icon(pygame.image.load("images/smash_ico.png"))
 
     # Creacion de las imagenes -----------------------------------------------
@@ -399,9 +399,7 @@ def opcion_1():
     start_b = pygame.image.load("images/startb.png")
     start_b = pygame.transform.scale(start_b, (80,40))
     start_bCK = True
-    start_b2 = pygame.image.load("images/startb2.png")
-    start_b2 = pygame.transform.scale(start_b2, (80,40))
-    start_bCK2 = False
+    
     
     
 
@@ -439,18 +437,16 @@ def opcion_1():
         
         if start_bCK == True:
             ventana.blit(start_b, (130, 500))
-            #ventana.blit(start_b, (355, 500))
-            #ventana.blit(start_b, (600, 500))
+            ventana.blit(start_b, (355, 500))
+            #ventana.blit(start_b, (600, 500)) PENDIENTE ----------
             # Mostrar mouse
             cor = pygame.mouse.get_pos()
             ventana.blit(cursor, cor)
         else:
             ventana.blit(start_b, (-400, -400))
-            #ventana.blit(start_b, (-400, -400))
-            #ventana.blit(start_b, (-400, -400))
-            # Mostrar mouse
-            cor = pygame.mouse.get_pos()
-            ventana.blit(cursor, cor)
+            
+
+        
 
         
         # Opcion 1
@@ -1274,7 +1270,7 @@ def opcion_1():
             
             # Mostrar version del programa y los creadores
             
-            ventana.blit(texto_2,(696,633))
+            ventana.blit(texto_2,(690,631))
             
             
             # Mostrar mouse
@@ -2455,4 +2451,6 @@ def opcion_1():
 
 
 opcion_1()
+
+
 
